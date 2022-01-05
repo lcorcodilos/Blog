@@ -67,6 +67,7 @@ just "male" and "female" for now for the sake of understanding gender representa
 ---
 [^1]: 1: These last few are beyond the scope of what I'd like to do but there should be some acknowledgment of
          the impact of such results.
+         
 [^2]: 2: The US Census makes the same assumption in broader analyses such as [this one](https://ncses.nsf.gov/pubs/nsb20212/participation-of-demographic-groups-in-stem).
          I'm not saying this justifies my approach but that I'm not the first to face this issue and it doesn't seem that I'm the only one who doesn't have a good solution yet.
 
