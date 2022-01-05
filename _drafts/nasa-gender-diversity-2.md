@@ -6,8 +6,8 @@ description: "How I transformed NASA publication data into a useful set of datab
 keywords: "nasa, diversity, data, project, database, engineering"
 ---
 
-As noted in [part 1]({% post_url 2022-01-04-nasa-gender-diversity-1 %}) of this series,
-I wanted to transform the bulk JSON of all NASA publications into three databases - one
+As noted in [part 1]({% post_url 2022-01-04-nasa-gender-diversity-1 %}) of this series, 
+I wanted to transform the bulk JSON of all NASA publications into three databases - one 
 for the published documents, one for the authors, and one for the organizations.
 
 Along the way, I also wanted to transform some of the information into pieces I felt would be

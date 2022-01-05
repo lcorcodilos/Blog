@@ -6,11 +6,11 @@ description: "How I sourced NASA publication data."
 keywords: "nasa, diversity, data, project, database, engineering"
 ---
 
-Since this is the first post for this project, I'd like to start by outlining
+Since this is the first post for this project, I'd like to start by outlining 
 motivations and some starting goals. 
 
 It's no secret that STEM fields have a lack of diversity which spans across 
-categories of gender, race, and ethnicity. However, I've recently connected with
+categories of gender, race, and ethnicity. However, I've recently connected with 
 someone interested in gender diversity at NASA. The initial idea was to search
 for gender pronouns in public NASA documents and tie them back to the formal
 position/title to which the pronouns refer. This would give
