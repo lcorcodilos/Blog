@@ -143,3 +143,6 @@ def my_func(pkg):
 And that's it! From my understanding, this sort of thing is implemented in tools like Dask
 which are probably more appropriate to use but I still found it fun and educational to
 set it up "from scratch."
+
+I am wondering if there's a way to do a context manager for this but it would be a context manager
+of a context manager so probably a bit contrived and not worth it.
