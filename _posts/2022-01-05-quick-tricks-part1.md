@@ -65,7 +65,7 @@ a given job (mainly to watch for unexpected slow downs) and how far the total po
 
 To give a visual idea of the goal, this is the final product:
 
-![](/assets/images/WorkerProgress.gif)
+![]({{site.baseurl}}/assets/images/WorkerProgress.gif)
 
 Each worker has it's own progress bar under a "global" progress bar and when a worker is done with a job,
 it starts back at 0% with the new job.
