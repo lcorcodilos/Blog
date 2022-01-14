@@ -2,7 +2,7 @@
 title_left    : "Data"
 title_right   : "Space" # default: ""
 description   : "A space to write about data projects."
-url           : https://lucascorcodilos.com/blog # site url
+url           : https://lucascorcodilos.com # site url
 baseurl       : /blog # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
