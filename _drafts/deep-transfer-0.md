@@ -17,7 +17,7 @@ it's a bit sparse at the moment), and participated in some online data science c
 doing some reading and asking.
 
 I now have a much better mental map of the landscape of "data science" and
-I think it's now safe to say I've been following the Dunning-Kruger curve.
+I think it's now safe to say I've been following the Dunning-Kruger curve. [[^1]]
 I can identify exactly when I was at the top of Mt. Stupid and there was a moment
 a few days ago when reading *Generative Deep Learning* by David Foster that I realized
 I was in the Valley of Despair.
@@ -211,3 +211,7 @@ a trained neural network that can provide a fully data-driven parameterization o
 where the network inputs are *unbinned* events in a control region mapped to a *binned*
 distributions in the signal region, the final layer
 having a soft-max activation so that the set of neurons is really a binned probability distribution!
+
+----------------
+[^1]: 1: I am aware this plot is not an accurate representation of the Dunning-Kruger effect and that this is the internet's popular interpretation of the effect. I still think it holds.
+         Or maybe my over-confidence in the plot is a result of the effect itself - we may never know!
