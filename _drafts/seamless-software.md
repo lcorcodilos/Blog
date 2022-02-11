@@ -94,3 +94,55 @@ I don't think I spent more than 5 minutes on each "Getting Started" page before 
 From then on out, I projected I would never touch either uproot or coffea - I had no need and realized I
 probably wouldn't be around the field long enough for a need to develop. That is until I decided on this DeepTransfer project...
 
+--------
+# Other thoughts
+--------
+I've taken two very different positions on ROOT - high energy physics' (HEP) dominant 
+computing software - before and after finishing grad school. In the final several
+years of my program, I was an advocate for keeping computing in the ROOT
+ecosystem. In contrast, after graduating, I couldn't wait to start exploring everything *not* ROOT
+available with python. Plotly, seaborn, numpy, pandas, Dask, SQL, Parquet - all made
+me say, "Wow, what have I been missing?" I even started drafting a post about
+all of the nonsensical design decisions in HEP software, ROOT included.
+
+I'll release that eventually but a recent foray into decoupling data from ROOT
+formats and tools has me learning that, despite it's... *idiosyncrasies*...
+ROOT sits on the throne of HEP software for a reason.
+
+---------
+
+## Opinions formed from TIMBER
+
+I wrote and released (and still support) a python library called [TIMBER](https://lucascorcodilos.com/TIMBER/)
+a couple of years ago. It's essentially a wrapper for ROOT's RDataFrame that uses
+a directional data processing graph to organize data manipulations in a traversable structure.
+The meta information stored in the tree makes it possible to have high level
+manipulations that consider the context of the given node being manipulated.
+It makes analysis code more succinct and easier to debug, encourages better general data practices, standardizes
+common algorithms, and runs *fast* because of the RDataFrame back-end which is lazy, only executing
+at the last moment (filling a histogram, writing out data, etc).
+
+When I was initially developing TIMBER, I considered a different back-end based on `uproot`,
+an I/O python library that is meant to "uproot" the user from ROOT dependencies.
+A whole community of physicist software developers (largely based around IRIS-HEP but in other places as well)
+have started basing tools on `uproot`, making a lot of effort to attract people away from ROOT.
+
+Most physicists are aware that HEP *used*
+to have the biggest data sets in the world but are now beaten by orders of magnitude by the likes of Google, Amazon, and others
+who have put a lot of money into building out tools for efficiency in processing data. So it's only obvious
+to start looking around at what everyone else is doing!
+
+But building a tool *without* ROOT has a very obvious downside that is largely ignored by these physicists-turned-software devs:
+**HEP technical knowledge is concentrated almost entirely in ROOT**.
+
+Building a new tool is easy. Convincing people to use your new tool is really hard.
+
+And that gets ignored **a lot** in HEP. My whole design philosophy with TIMBER was to
+make it as easy and obvious as possible for physicists to start using it - and that meant
+tying it to ROOT which 
+
+1. wouldn't disrupt the pipelines that come before and after TIMBER, and
+2. make the back-end an already familiar ecosystem.
+
+I even used the default Doxygen theme so TIMBER docs would *look* like a familiar place
+when a user inevitably needed help.
