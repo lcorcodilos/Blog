@@ -6,12 +6,7 @@ description: "A lesson in EDA before throwing algorithms at data."
 keywords: "python"
 ---
 
-<head>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-</head>
-
-I recently covered how different HEP data can be in its fundamental nature when
-compared to non-HEP/"industry" datasets. In order to get some EDA experience
+In order to get some EDA experience
 working with non-HEP data, I'm starting this series of exercises which are
 meant to take a lot of the tools I've been learning and apply them to some
 popular datasets. I'm not expecting to do anything with this data that hasn't
